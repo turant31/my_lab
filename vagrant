@@ -1,0 +1,26 @@
+vagrant version
+
+brew upgrade vagrant
+
+vagrant box list 
+
+To get a Vagrantfile
+--> vagrant init
+
+or
+
+--> vagrant box add hashicorp/bionic64
+
+______
+#Vagrant_File:
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "hashicorp/bionic64"
+  config.vm.box_version = "1.0.282"
+  config.vm.box_url = "https://vagrantcloud.com/hashicorp/bionic64"
+
+end
+______
+--> vagrant up
+
+--> vagrant ssh
