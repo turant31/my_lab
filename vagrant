@@ -24,3 +24,9 @@ ______
 --> vagrant up
 
 --> vagrant ssh
+
+vagrant destroy
+
+vagrant box list
+
+vagrant box remove hashicorp/bionic64
