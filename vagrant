@@ -30,3 +30,6 @@ vagrant destroy
 vagrant box list
 
 vagrant box remove hashicorp/bionic64
+____
+
+https://developer.hashicorp.com/vagrant/tutorials/getting-started
