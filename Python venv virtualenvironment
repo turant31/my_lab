@@ -52,12 +52,12 @@ source venv/bin/activate
 
 python -V
 ________
-(virtualmachine1) ubuntu@ip-172-31-10-155:~$ ls
+ubuntu@ip-172-31-10-155:~$ ls
 get-pip.py  tmp  tutorial_env  venv
-(virtualmachine1) ubuntu@ip-172-31-10-155:~$ cd venv/virtualmachine1/bin/
-(virtualmachine1) ubuntu@ip-172-31-10-155:~/venv/virtualmachine1/bin$ source activate
+ubuntu@ip-172-31-10-155:~$ cd venv/virtualmachine1/bin/
+ubuntu@ip-172-31-10-155:~/venv/virtualmachine1/bin$ source activate
 (virtualmachine1) ubuntu@ip-172-31-10-155:~/venv/virtualmachine1/bin$ 
-
+____
 https://help.dreamhost.com/hc/en-us/articles/115000702772-Installing-a-custom-version-of-Python-3
 
 https://help.dreamhost.com/hc/en-us/articles/115000695551-Installing-and-using-virtualenv-with-Python-3
