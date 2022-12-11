@@ -37,7 +37,6 @@ which virtualenv
 Creating a virtual environment using a custom Python version
 
 which python3
-/home/username/opt/python-3.10.1/bin/python
 /home/ubuntu/venv/virtualmachine1/bin/python3
 $ cd ~/example.com
 
