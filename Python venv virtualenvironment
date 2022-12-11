@@ -1,0 +1,64 @@
+python virtualenv
+
+
+Installing a custom version of Python 3
+Log into your server via SSH:
+cd ~
+[server]$ mkdir tmp
+[server]$ cd tmp
+[server]$ wget https://www.python.org/ftp/python/3.10.1/Python-3.10.1.tgz
+[server]$ tar zxvf Python-3.10.1.tgz 
+[server]$ cd Python-3.10.1 
+[server]$ ./configure --prefix=$HOME/opt/python-3.10.1
+[server]$ make
+[server]$ make install
+
+cd 
+
+ls -a (bzw. ll) —> .bash_profile
+export PATH=$HOME/opt/python-3.10.1/bin:$PATH
+
+which python3
+
+python3 --version
+
+
+
+Installing and using virtualenv with Python 3
+
+python3 -m pip install --upgrade pip
+
+
+pip3 install virtualenv
+
+which virtualenv
+
+
+Creating a virtual environment using a custom Python version
+
+which python3
+/home/username/opt/python-3.10.1/bin/python
+/home/ubuntu/venv/virtualmachine1/bin/python3
+$ cd ~/example.com
+
+Update your .bash_profile
+$ . ~/.bash_profile 
+
+virtualenv -p /home/username/opt/python-3.10.1/bin/python3 venv
+
+pip3 install --upgrade setuptools
+
+source venv/bin/activate
+
+python -V
+________
+(virtualmachine1) ubuntu@ip-172-31-10-155:~$ ls
+get-pip.py  tmp  tutorial_env  venv
+(virtualmachine1) ubuntu@ip-172-31-10-155:~$ cd venv/virtualmachine1/bin/
+(virtualmachine1) ubuntu@ip-172-31-10-155:~/venv/virtualmachine1/bin$ source activate
+(virtualmachine1) ubuntu@ip-172-31-10-155:~/venv/virtualmachine1/bin$ 
+
+https://help.dreamhost.com/hc/en-us/articles/115000702772-Installing-a-custom-version-of-Python-3
+
+https://help.dreamhost.com/hc/en-us/articles/115000695551-Installing-and-using-virtualenv-with-Python-3
+
